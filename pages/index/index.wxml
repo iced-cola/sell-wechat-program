@@ -1,0 +1,45 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="brand">欢迎光临🐀人外卖</view>
+  <view class="category">
+    <view wx:for="{{ category }}" data-item="item" wx:for-index="idx">
+      <view class="category-item">
+        {{ item.name }}
+      </view>
+    </view>
+  </view>
+  <view class="content">
+    <view wx:for="{{ dishes }}" data-item="item" wx:for-index="idx">
+      <view class="dish-item">
+        <image src="{{ item.image }}" class="image"/>
+        <view class="desc">
+          <text class="item-title">{{ item.name }}</text>
+          <text class="item-desc">￥{{ item.desc }}</text>
+          <text class="price">￥{{ item.price }}</text>
+        </view>
+      </view>
+    </view>
+
+    <view wx:for="{{ dishes }}" data-item="item" wx:for-index="idx">
+      <view class="dish-item">
+        <image src="{{ item.image }}" class="image"/>
+        <view class="desc">
+          <text class="item-title">{{ item.name }}</text>
+          <text class="item-desc">￥{{ item.desc }}</text>
+          <text class="price">￥{{ item.price }}</text>
+        </view>
+      </view>
+    </view>
+
+    <view wx:for="{{ dishes }}" data-item="item" wx:for-index="idx">
+      <view class="dish-item">
+        <image src="{{ item.image }}" class="image"/>
+        <view class="desc">
+          <text class="item-title">{{ item.name }}</text>
+          <text class="item-desc">{{ item.desc }}</text>
+          <text class="price">￥{{ item.price }}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

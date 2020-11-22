@@ -1,0 +1,72 @@
+/**index.wxss**/
+
+.brand {
+  width: 100%;
+  padding: 10px 10px 10px 10px;
+  text-align: center;
+  margin: auto;
+  position: fixed;
+  background-color: white;
+}
+
+.category {
+  width: 30%;
+  height: 100%;
+  position: fixed;
+  margin-top: 15%;
+}
+
+.content {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  margin-left: 30%;
+  margin-top: 15%;
+}
+
+.category-item {
+  padding: 10px 0 0 5px;
+  margin: 5px 0 0 5px;
+}
+
+.dish-item {
+  margin: 5px 5px 0 0;
+  height: 80px;
+  width: auto;
+  background-color: lightgray;
+  display: flex;
+  flex-direction: row;
+}
+
+.item-title {
+  padding-left: 10px;
+  font-family: Georgia;
+  font-size: larger;
+}
+
+.item-desc {
+  padding-left: 10px;
+  font-family: Georgia;
+  font-size: small;
+}
+
+.price {
+  padding-left: 10px;
+  font-size: initial;
+  color: coral;
+}
+
+.image {
+  height: 80px;
+  width: 80px;
+  margin-right: 5px;
+}
+
+.desc {
+  height: 100px;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+}
