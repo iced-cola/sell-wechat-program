@@ -9,35 +9,18 @@
     </view>
   </view>
   <view class="content">
-    <view wx:for="{{ dishes }}" data-item="item" wx:for-index="idx">
-      <view class="dish-item">
-        <image src="{{ item.image }}" class="image"/>
-        <view class="desc">
-          <text class="item-title">{{ item.name }}</text>
-          <text class="item-desc">￥{{ item.desc }}</text>
-          <text class="price">￥{{ item.price }}</text>
-        </view>
-      </view>
-    </view>
-
-    <view wx:for="{{ dishes }}" data-item="item" wx:for-index="idx">
-      <view class="dish-item">
-        <image src="{{ item.image }}" class="image"/>
-        <view class="desc">
-          <text class="item-title">{{ item.name }}</text>
-          <text class="item-desc">￥{{ item.desc }}</text>
-          <text class="price">￥{{ item.price }}</text>
-        </view>
-      </view>
-    </view>
-
-    <view wx:for="{{ dishes }}" data-item="item" wx:for-index="idx">
+    <view wx:for="{{ dishes }}" data-item="item" wx:for-index="index">
       <view class="dish-item">
         <image src="{{ item.image }}" class="image"/>
         <view class="desc">
           <text class="item-title">{{ item.name }}</text>
           <text class="item-desc">{{ item.desc }}</text>
-          <text class="price">￥{{ item.price }}</text>
+          <view class="form">
+            <text class="price">￥{{ item.price }}</text>
+            <button class="btn" bindtap="subtract" data-index="{{ index }}">-</button>
+            <input class="input" bindinput="getInputValue" name="count" value="{{ order[index].count }}"/>
+            <button class="btn" bindtap="add" data-index="{{ index }}">+</button>
+          </view>
         </view>
       </view>
     </view>

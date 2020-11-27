@@ -10,19 +10,19 @@
 }
 
 .category {
-  width: 30%;
+  width: 20%;
   height: 100%;
   position: fixed;
   margin-top: 15%;
 }
 
 .content {
-  width: 70%;
+  width: 80%;
   height: 100%;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  margin-left: 30%;
+  margin-left: 20%;
   margin-top: 15%;
 }
 
@@ -47,13 +47,13 @@
 }
 
 .item-desc {
-  padding-left: 10px;
+  margin: 5px 0 0 10px;
   font-family: Georgia;
   font-size: small;
 }
 
 .price {
-  padding-left: 10px;
+  margin: 5px 0 0 10px;
   font-size: initial;
   color: coral;
 }
@@ -69,4 +69,22 @@
   width: auto;
   display: flex;
   flex-direction: column;
+}
+
+.form {
+  display: flex;
+  flex-direction: row;
+}
+
+.btn {
+  height: 50rpx;
+  width: 50rpx;
+  margin: 5px 0 0 10px;
+}
+
+.input {
+  height: 50rpx;
+  width: 50rpx;
+  margin-left: 5rpx;
+  margin: 10rpx 0 0 20rpx;
 }
