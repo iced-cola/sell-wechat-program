@@ -1,2 +1,4 @@
 <!--pages/mine/mine.wxml-->
-<text>pages/mine/mine.wxml</text>
+<text>我的订单</text>
+<text>我的信息</text>
+<text>我的地址</text>

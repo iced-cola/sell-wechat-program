@@ -1,0 +1,31 @@
+/* pages/address/address.wxss */
+.address-form {
+    width: 80%;
+    height: auto;
+    margin: 50rpx 50rpx 30rpx 50rpx;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .address-form-item {
+    border-bottom: 1rpx solid lightgray;
+    background-color: #ffffff;
+    margin: 40rpx 0 0 0;
+    padding: 30rpx;
+  }
+  
+  .address-btn-area {
+    margin-top: 80rpx;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .address-submit-btn {
+    border: 1 solid lightgray;
+    background-color: #ffffff;
+    margin: auto;
+    top: 80rpx;
+    left: 0;
+    width: 35%;
+  }

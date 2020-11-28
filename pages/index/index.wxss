@@ -2,7 +2,7 @@
 
 .brand {
   width: 100%;
-  padding: 10px 10px 10px 10px;
+  padding: 20rpx 20rpx 20rpx 20rpx;
   text-align: center;
   margin: auto;
   position: fixed;
@@ -13,7 +13,7 @@
   width: 20%;
   height: 100%;
   position: fixed;
-  margin-top: 15%;
+  margin-top: 10%;
 }
 
 .content {
@@ -23,49 +23,49 @@
   flex-direction: column;
   box-sizing: border-box;
   margin-left: 20%;
-  margin-top: 15%;
+  margin-top: 10%;
 }
 
 .category-item {
-  padding: 10px 0 0 5px;
-  margin: 5px 0 0 5px;
+  padding: 20rpx 0 0 10rpx;
+  margin: 10rpx 0 0 10rpx;
 }
 
 .dish-item {
-  margin: 5px 5px 0 0;
-  height: 80px;
+  margin: 20rpx 10rpx 40rpx 0;
+  height: 160rpx;
   width: auto;
-  background-color: lightgray;
+  /* background-color: lightgray; */
   display: flex;
   flex-direction: row;
 }
 
 .item-title {
-  padding-left: 10px;
+  padding-left: 20rpx;
   font-family: Georgia;
   font-size: larger;
 }
 
 .item-desc {
-  margin: 5px 0 0 10px;
+  margin: 10rpx 0 0 20rpx;
   font-family: Georgia;
   font-size: small;
 }
 
 .price {
-  margin: 5px 0 0 10px;
+  margin: 10rpx 0 0 20rpx;
   font-size: initial;
   color: coral;
 }
 
 .image {
-  height: 80px;
-  width: 80px;
-  margin-right: 5px;
+  height: 160rpx;
+  width: 160rpx;
+  margin-right: 10rpx;
 }
 
 .desc {
-  height: 100px;
+  height: 200rpx;
   width: auto;
   display: flex;
   flex-direction: column;
@@ -79,7 +79,7 @@
 .btn {
   height: 50rpx;
   width: 50rpx;
-  margin: 5px 0 0 10px;
+  margin: 10rpx 0 0 20rpx;
 }
 
 .input {
@@ -87,4 +87,17 @@
   width: 50rpx;
   margin-left: 5rpx;
   margin: 10rpx 0 0 20rpx;
+}
+
+.to-pay {
+  height: 30rpx;
+  width: 80%;
+  background-color: lightgray;
+  border-radius: 100rpx;
+  position: fixed;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 85%;
+  bottom: 0;
 }

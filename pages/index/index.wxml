@@ -9,20 +9,25 @@
     </view>
   </view>
   <view class="content">
-    <view wx:for="{{ dishes }}" data-item="item" wx:for-index="index">
+    <view wx:for="{{ product }}" data-item="item" wx:for-index="index">
       <view class="dish-item">
-        <image src="{{ item.image }}" class="image"/>
+        <image src="{{ item.productIcon }}" class="image"/>
         <view class="desc">
-          <text class="item-title">{{ item.name }}</text>
-          <text class="item-desc">{{ item.desc }}</text>
+          <text class="item-title">{{ item.productName }}</text>
+          <text class="item-desc">{{ item.productDescription }}</text>
           <view class="form">
-            <text class="price">￥{{ item.price }}</text>
-            <button class="btn" bindtap="subtract" data-index="{{ index }}">-</button>
-            <input class="input" bindinput="getInputValue" name="count" value="{{ order[index].count }}"/>
-            <button class="btn" bindtap="add" data-index="{{ index }}">+</button>
+            <text class="price">￥{{ item.productPrice }}</text>
+            <button class="btn" bindtap="subtract" data-id="{{ item.productId }}">-</button>
+            <input class="input" bindinput="getInputValue" name="count" value="{{ item.count }}" placeholder="0"/>
+            <button class="btn" bindtap="add" data-id="{{ item.productId }}">+</button>
           </view>
         </view>
       </view>
     </view>
   </view>
+</view>
+
+<!-- 浮动在上层的结账跳转 -->
+<view class="to-pay">
+  <button bindtap="toCompleteAddress" disabled="{{ productCount <= 0 }}">结算 {{ productCount }} 件商品共 {{ total2Pay }} 元</button>
 </view>

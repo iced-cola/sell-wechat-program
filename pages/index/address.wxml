@@ -1,0 +1,12 @@
+<!--pages/address/address.wxml-->
+<view class="container">
+    <form class="address-form">
+        <input class="address-form-item" name="name" placeholder="姓名" />
+        <input class="address-form-item" name="phone" placeholder="手机号" />
+        <input class="address-form-item" name="address" placeholder="收货地址" />
+        <view class="address-btn-area">
+            <button class="address-submit-btn" formType="reset">返回</button>
+            <button class="address-submit-btn" formType="submit">支付</button>
+        </view>
+    </form>
+</view>
